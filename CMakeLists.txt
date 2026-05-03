@@ -1,0 +1,20 @@
+add_executable(
+    image_processor
+    image_processor.cpp
+    source/core/image.cpp
+    source/parser/args_parser.cpp
+    source/filters/grayscale_filter.cpp
+    source/filters/negative_filter.cpp
+    source/filters/sharpen_filter.cpp
+    source/filters/crop_filter.cpp
+    source/filters/edge_filter.cpp
+    source/filters/blur_filter.cpp
+    source/filters/crystal_filter.cpp
+    source/filters/filter_pipeline.cpp
+    source/filters/filter_factory.cpp
+    source/bmp/bmp_reader.cpp
+    source/bmp/bmp_writer.cpp
+    source/filters/flip_flop_filter.cpp
+    source/filters/flip_horiz_filter.cpp
+)
+target_include_directories(image_processor PRIVATE source)
